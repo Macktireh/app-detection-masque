@@ -1,11 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Mar  8 08:49:23 2020
-
-@author: OHyic
-"""
-
-#import flasks libraries
 from flask import Flask, render_template, request, jsonify, url_for, redirect, flash, Response, send_file
 from flask_socketio import SocketIO, emit
 import webbrowser
@@ -22,8 +14,6 @@ def index():
 
 
 if __name__ == '__main__':
-    Timer(1,lambda: webbrowser.open_new("http://127.0.0.1:5000/")).start()
+    Timer(1, lambda: webbrowser.open_new("http://127.0.0.1:5000/")).start()
     socketio.run(app)
-    
-    
-    
+   
